@@ -29,18 +29,14 @@ ll powerMod(ll a, ll b, ll c) {
 }
 
 int main() {
-  ifstream infile("b-large-practice.in");
-///  if (!infile.is_open()) cout << "no such file!" << endl;
-  string line;
+	freopen("B-large-practice.in","r",stdin);
+//	freopen("results/B-large-practice.out","w",stdout);
   int num;
-  getline(infile, line);
-  istringstream(line) >> num;
+  cin >> num;
 
   for (int i = 1; i <= num; i++) {
-    getline(infile, line);
-    istringstream iss(line);
     ll a, b, n, k;
-    iss >> a >> b >> n >> k;
+    cin >> a >> b >> n >> k;
 
     for (int i = 0; i < k; i++) {
       htA[i] = htB[i] = 0;
